@@ -1,0 +1,19 @@
+{
+    "Login" : {
+        "validLogin": {
+            "username": "admin",
+            "password": "admin",
+            "loginErrorMessage": "login success"
+        },
+        "invalidPassword": {
+            "username": "admin",
+            "password": "ws",
+            "loginErrorMessage": "invalid username and password"
+        },
+        "invalidUserName": {
+            "username": "admin1",
+            "password": "admin",
+            "loginErrorMessage": "Incorrect User or Password"
+        }
+    }
+}

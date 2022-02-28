@@ -1,0 +1,10 @@
+{
+  "ignoreTestFiles": "*.js",
+  "viewportWidth": 1024,
+  "viewportHeight": 768,
+  "defaultCommandTimeout": 10000,
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+    "configFile": "reporter.json"
+  }
+}

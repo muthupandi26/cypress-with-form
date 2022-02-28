@@ -1,0 +1,34 @@
+{
+  "name": "demotest",
+  "version": "1.0.0",
+  "description": "demotest e2e automation suite",
+  "main": "index.js",
+  "scripts": {
+    "test": "node scripts/cypress.js --browser chrome"
+  },
+  "author": "Ankur",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "cypress": "^9.3.1",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-multi-reporters": "^1.5.0",
+    "cypress-xpath": "^1.4.0",
+    "faker": "^4.1.0",
+    "ls": "^0.2.1",
+    "mocha": "^9.2.0",
+    "mochawesome": "^7.0.1",
+    "mochawesome-merge": "^4.0.0",
+    "mochawesome-report-generator": "^6.0.1",
+    "rimraf": "^3.0.0",
+    "yargs": "^15.0.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/support/steps"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.596.0",
+    "dotenv": "^8.2.0",
+    "nodemailer": "^6.4.2"
+  }
+}
