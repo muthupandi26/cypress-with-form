@@ -8,12 +8,18 @@
         "invalidPassword": {
             "username": "admin",
             "password": "ws",
-            "loginErrorMessage": "invalid username and password"
+            "loginErrorMessage": "wrong password"
         },
         "invalidUserName": {
             "username": "admin1",
             "password": "admin",
-            "loginErrorMessage": "Incorrect User or Password"
+            "loginErrorMessage": "wrong username"
+        }
+    },
+    "Validation" : {
+        "validDetails": {
+            "name": "admin",
+            "email": "admin@gmail.com"
         }
     }
 }

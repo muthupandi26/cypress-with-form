@@ -1,9 +1,20 @@
-Feature: Visit
+Feature: Login
 
-Scenario: Visit
-When Visit locally created form
-Then I login that site
+Scenario: Login
+When Login with correct username and password
+Then I can see the message
 
-Scenario: InvalidLogin(without password)
-When Login with empty password
-# Then I should see error message
+Scenario: InvalidLogin(wrong password)
+When Login with wrong password
+# Then I can see error message
+
+Scenario: InvalidLogin(wrong username)
+When Login with wrong username
+# Then I can see error message
+
+Scenario: Checkbox testing
+When check the checkbox value
+
+# Scenario: login form
+# When Login with correct details
+
