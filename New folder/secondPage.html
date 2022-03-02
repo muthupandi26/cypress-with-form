@@ -10,11 +10,11 @@
 				<form action="/" id="form2">
           <h1>Form</h1>
           <div>
-          Name : <input type="text"  id = "name" placeholder="Name"> <br> <br>
-          Email : <input type="email" id="email" placeholder="Email">
+          Name : * <input type="text"  id = "name" placeholder="Name"> <br> <br>
+          Email : * <input type="email" id="email" placeholder="Email">
           </div>
           <div>
-            <p>Please select your favorite Web language:</p>
+            <p>Please select your favorite Web language: *</p>
             <input type="radio" id="html" name="fav_language" value="HTML">
             <label for="html">HTML</label><br>
             <input type="radio" id="css" name="fav_language" value="CSS">
@@ -23,7 +23,7 @@
             <label for="javascript">JavaScript</label>        
           </div><br>
           <div>
-            <p>Please select your favorite vehicle</p>
+            <p>Please select your favorite vehicle *</p>
             <input type="checkbox" id="vehicle1" name="vehicle" value="Bike">
             <label for="vehicle1"> I have a bike</label><br>
             <input type="checkbox" id="vehicle2" name="vehicle" value="Car">
@@ -44,7 +44,7 @@
             <label for="myfile">Select a file:</label>
             <input type="file" id="myfile" name="myfile">
           </div> <br> <br>
-          <div id="error2"></div>
+          <div style="color:red;" id="error2"></div>
           <input type="submit" id="submit">
 				</form>
 			</div>

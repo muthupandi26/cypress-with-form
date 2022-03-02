@@ -19,7 +19,23 @@
     "Validation" : {
         "validDetails": {
             "name": "admin",
-            "email": "admin@gmail.com"
+            "email": "admin@gmail.com",
+            "text": "login success"
+        },
+        "invalidEmail": {
+            "name" : "admin",
+            "email" : " ",
+            "text" : "Email is required"
+        },
+        "invalidRadio": {
+            "name": "admin",
+            "email": "admin@gmail.com",
+            "text": "please select the radion button"
+        },
+        "invalidCheck": {
+            "name": "admin",
+            "email": "admin@gmail.com",
+            "text" : "please select the checkbox"
         }
     }
 }

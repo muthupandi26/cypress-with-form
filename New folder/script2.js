@@ -8,7 +8,7 @@ const check = document.getElementsByName("vehicle")
 form.addEventListener('submit', (e) => {
     let msg = [];
     if(name1.value == '' || name1.value == null){
-        msg.push('Name is required');
+        msg.push('Please Enter the valid Information');
     }
     else if(email.value == '' || email.value == null){
         msg.push("Email is required")
