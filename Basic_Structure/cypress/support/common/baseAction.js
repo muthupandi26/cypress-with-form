@@ -2,6 +2,10 @@ import { BaseElement } from './baseElement';
 
 export class BaseAction extends BaseElement {
 
+    get(locator,value){
+        cy.get(locator).attachFile(value);
+    }
+
     type(locator, value) {
         const element = this.findElement(locator);
         element.should('be.visible').not('[disabled]').clear().type(value);

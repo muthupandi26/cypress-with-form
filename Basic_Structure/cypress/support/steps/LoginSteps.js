@@ -85,3 +85,11 @@ Then('Form result 4', ()=> {
     homepage.checkBox();
     homepage.shouldSee(invalidCheck.text)
 })
+
+When('uploading file', () => {
+    baseAction.openBrowser(Constant.BASE_URL_2)
+    const yourfixture = 'data.json';
+    homepage.uploadfile(yourfixture)
+    // cy.get('[id="myfile"]').attachFile(yourfixture)
+    // homepage.click('//input[@id="myfile"]').selectFile(yourfixture)
+})

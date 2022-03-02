@@ -28,6 +28,7 @@ export class Homepage extends BaseAction {
         checkBox: '//input[@id="vehicle2"]',
         messages: '//div[@id="error2"]',
         signIn_Btn: '//input[@id="submit"]',
+        upload: '[id="myfile"]',
 
     }
 
@@ -57,5 +58,9 @@ export class Homepage extends BaseAction {
         this.checkToCheckbox(this.elements.radioButton)
         // this.checkToCheckboxByValues(this.elements.checkBox, true, "Car")
 
+    }
+
+    uploadfile(value){
+        this.get(this.elements.upload,value)
     }
 }
