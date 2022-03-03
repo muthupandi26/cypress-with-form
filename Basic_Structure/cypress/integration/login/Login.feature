@@ -32,5 +32,8 @@ Scenario: Form without Checkbox values
 When Missing Checkbox value
 Then Form result 4
 
-Scenario: Upload file
-When uploading file
+Scenario: Upload file for Image
+When uploading file for Image
+
+Scenario: Upload file for json 
+When uploading file for json format

@@ -11,6 +11,7 @@ const validation = data.Validation.validDetails;
 const invalidEmail = data.Validation.invalidEmail;
 const invalidRadio = data.Validation.invalidRadio;
 const invalidCheck = data.Validation.invalidCheck;
+const file = data.fileDetails;
 
 const homepage =  new Homepage();
 const baseAction = new BaseAction();
@@ -86,10 +87,14 @@ Then('Form result 4', ()=> {
     homepage.shouldSee(invalidCheck.text)
 })
 
-When('uploading file', () => {
+When('uploading file for Image', () => {
     baseAction.openBrowser(Constant.BASE_URL_2)
-    const yourfixture = 'data.json';
-    homepage.uploadfile(yourfixture)
+    homepage.uploadfile(file.image)
     // cy.get('[id="myfile"]').attachFile(yourfixture)
     // homepage.click('//input[@id="myfile"]').selectFile(yourfixture)
+})
+
+When('uploading file for json format', () => {
+    baseAction.openBrowser(Constant.BASE_URL_2)
+    homepage.uploadfile(file.json)
 })

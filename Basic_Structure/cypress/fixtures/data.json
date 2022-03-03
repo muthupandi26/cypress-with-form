@@ -37,5 +37,10 @@
             "email": "admin@gmail.com",
             "text" : "please select the checkbox"
         }
+    },
+    "fileDetails" : {
+        "image" : "Capture.PNG",
+        "json" : "data.json"
     }
+
 }
