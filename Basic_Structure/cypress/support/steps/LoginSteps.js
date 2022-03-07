@@ -13,6 +13,8 @@ const invalidRadio = data.Validation.invalidRadio;
 const invalidCheck = data.Validation.invalidCheck;
 const file = data.fileDetails;
 
+const mailDetails = data.mailDetails.valid_Mail_Info;
+
 const homepage =  new Homepage();
 const baseAction = new BaseAction();
 
@@ -49,6 +51,7 @@ When('Login with wrong username', () => {
 When('Enter name and email', () => {
     baseAction.openBrowser(Constant.BASE_URL_2);
     homepage.loginWith(validation.name, validation.email);
+    homepage.uploadfile(file.image)
 })
 
 Then('Enter Radio & Checkbox values', () => {
@@ -87,14 +90,34 @@ Then('Form result 4', ()=> {
     homepage.shouldSee(invalidCheck.text)
 })
 
+When('Missing select file', () => {
+    baseAction.openBrowser(Constant.BASE_URL_2);
+    homepage.loginWith(validation.name, validation.email);
+    homepage.radioButton();
+    homepage.shouldSee(file.errorMsg)
+})
+
 When('uploading file for Image', () => {
     baseAction.openBrowser(Constant.BASE_URL_2)
     homepage.uploadfile(file.image)
     // cy.get('[id="myfile"]').attachFile(yourfixture)
-    // homepage.click('//input[@id="myfile"]').selectFile(yourfixture)
 })
 
 When('uploading file for json format', () => {
     baseAction.openBrowser(Constant.BASE_URL_2)
     homepage.uploadfile(file.json)
+    console.log("hello world")
+})
+
+
+When('Email sent Test case', () => {
+    baseAction.openBrowser(Constant.BASE_URL_3);
+})
+
+Then('Email Sent starting', () => {
+    homepage.mailFil(mailDetails.senderName,
+        mailDetails.senderMail,
+        mailDetails.senderSubject,
+        mailDetails.senderMsg);
+
 })

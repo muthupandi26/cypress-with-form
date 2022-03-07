@@ -39,8 +39,17 @@
         }
     },
     "fileDetails" : {
+        "errorMsg" : "please select the file",
         "image" : "Capture.PNG",
         "json" : "data.json"
+    },
+    "mailDetails" : {
+        "valid_Mail_Info" : {
+            "senderName" : "Muthupandi",
+            "senderMail" : "p.muthupandi@tftus.com",
+            "senderSubject" : "Testing",
+            "senderMsg" : "just check for sending mail through cypress"
+        }
     }
 
 }
