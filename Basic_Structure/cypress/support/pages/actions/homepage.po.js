@@ -28,7 +28,15 @@ export class Homepage extends BaseAction {
         checkBox: '//input[@id="vehicle2"]',
         messages: '//div[@id="error2"]',
         signIn_Btn: '//input[@id="submit"]',
+        file : '//input[@id="myfile"]',
         upload: '[id="myfile"]',
+
+        // 3. mail check
+        mailName : '//input[@id="name"]',
+        mailId : '//input[@id="email"]',
+        subject: '//input[@id="subject"]',
+        msg : '//textarea[@id="message"]',
+        submit_form: '//input[@class="submit"]',
 
     }
 
@@ -62,5 +70,13 @@ export class Homepage extends BaseAction {
 
     uploadfile(value){
         this.get(this.elements.upload,value)
+    }
+    
+    mailFil(senderName,senderEmail,senderSubject,senderMsg) {
+        this.type(this.elements.mailName, senderName)
+        this.type(this.elements.mailId, senderEmail)
+        this.type(this.elements.subject,senderSubject)
+        this.type(this.elements.msg, senderMsg)
+        this.click(this.elements.submit_form)
     }
 }

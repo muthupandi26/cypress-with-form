@@ -23,7 +23,8 @@ form.addEventListener('submit', (e) => {
 
 
     if(username.value == "admin" && password.value == "admin"){
-        msg.push("login success");
+        // msg.push("login success");
+        window.location = "http://127.0.0.1:5500/New%20folder/secondPageee.html";
         // window.location = "/New%20folder/secondPage.html";
         // window.location = "New%20folder/secondPage.html";
         
