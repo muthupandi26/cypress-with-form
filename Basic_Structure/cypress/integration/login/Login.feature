@@ -38,6 +38,6 @@ When uploading file for Image
 When uploading file for json format
 
 
-Scenario: Test Case-3 Email sent Test case
-When Email sent Test case
-Then Email Sent starting
+# Scenario: Test Case-3 Email sent Test case
+# When Email sent Test case
+# Then Email Sent starting
