@@ -1,11 +1,9 @@
 Feature: Form details
 
-Scenario: Fill out the form
-When The user fills a form with the following configurations:
-
-| name | email       | contact   |
-|gender | file       | 
-|test  | test@gmail.com | 1234567890 | 
-| male | Capture.PNG |
-
+Scenario Outline: Fill out the form
+When The user fills a form with the following configurations
 Then verify the form details
+
+Examples:
+    | name | mail | contact |
+    | admin  | admin@gmail.com  | 123456  |
