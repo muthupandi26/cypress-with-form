@@ -14,6 +14,8 @@ export class Homepage extends BaseAction {
         // USERNAME_INPUT: '//input[@name="email"]',
         // PASSWORD_INPUT: '//input[@name="password"]',
         // SignIn_Btn: '//button[@id="btn-login"]',
+        USERNAME_INPUT: '//input[@id="name"]',
+        PASSWORD_INPUT: '//input[@id="email"]',
 
     }
 

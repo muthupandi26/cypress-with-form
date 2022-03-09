@@ -11,8 +11,12 @@ const homepage =  new Homepage();
 const baseAction = new BaseAction();
 
 
-When('The user fills a form with the following configurations', () => {
+When('The user fills a form with the following configurations', (table) => {
     baseAction.openBrowser(Constant.BASE_URL);
+    table.hashes().forEach( (row) => {
+        homepage.loginWith(row.name,row.password)
+    })
+
 })
 
 
