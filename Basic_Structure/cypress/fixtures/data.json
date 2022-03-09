@@ -1,55 +1,14 @@
 {
     "Login" : {
-        "validLogin": {
+        "admin": {
             "username": "admin",
             "password": "admin",
-            "loginErrorMessage": "login success"
+            "loginErrorMessage": "Invalid Login"
         },
-        "invalidPassword": {
-            "username": "admin",
-            "password": "ws",
-            "loginErrorMessage": "wrong password"
-        },
-        "invalidUserName": {
-            "username": "admin1",
-            "password": "admin",
-            "loginErrorMessage": "wrong username"
-        }
-    },
-    "Validation" : {
-        "validDetails": {
-            "name": "admin",
-            "email": "admin@gmail.com",
-            "text": "login success"
-        },
-        "invalidEmail": {
-            "name" : "admin",
-            "email" : " ",
-            "text" : "Email is required"
-        },
-        "invalidRadio": {
-            "name": "admin",
-            "email": "admin@gmail.com",
-            "text": "please select the radion button"
-        },
-        "invalidCheck": {
-            "name": "admin",
-            "email": "admin@gmail.com",
-            "text" : "please select the checkbox"
-        }
-    },
-    "fileDetails" : {
-        "errorMsg" : "please select the file",
-        "image" : "Capture.PNG",
-        "json" : "data.json"
-    },
-    "mailDetails" : {
-        "valid_Mail_Info" : {
-            "senderName" : "Muthupandi",
-            "senderMail" : "p.muthupandi@tftus.com",
-            "senderSubject" : "Testing",
-            "senderMsg" : "just check for sending mail through cypress"
+        "agent" : {
+            "username" : "agent",
+            "password" : "agent",
+            "loginErrorMessage" : "Invalid Login"
         }
     }
-
 }
