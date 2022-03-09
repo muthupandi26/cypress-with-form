@@ -1,5 +1,0 @@
-node_modules
-**/screenshots
-**/videos
-.env
-cypress/report/
