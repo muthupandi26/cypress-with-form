@@ -15,13 +15,15 @@ When('The user fills a form with the following configurations', (table) => {
     baseAction.openBrowser(Constant.BASE_URL);
     table.hashes().forEach( (row) => {
         homepage.loginWith(row.name,row.password)
+        homepage.radioButton(row.radio, row.checkbox)
+        homepage.uploadFile(row.file)
     })
 
 })
 
 
 Then('verify the form details', () => {
-
+    homepage.msgReport(adminLogin.loginErrorMessage)
 })
 
 
