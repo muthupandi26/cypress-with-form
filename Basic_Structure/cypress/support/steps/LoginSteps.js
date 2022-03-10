@@ -23,7 +23,7 @@ When('The user fills a form with the following configurations', (table) => {
 
 
 Then('verify the form details', () => {
-    homepage.msgReport(adminLogin.loginErrorMessage)
+    homepage.errorMsg(adminLogin.loginErrorMessage)
 })
 
 

@@ -22,6 +22,14 @@ export class Homepage extends BaseAction {
         SignIn_Btn : '//input[@id="submit"]',
         messages: '//div[@id="error2"]',
 
+        // 3. mail check
+        mailName : '//input[@id="name"]',
+        mailId : '//input[@id="email"]',
+        subject: '//input[@id="subject"]',
+        msg : '//textarea[@id="message"]',
+        submit_form: '//input[@class="submit"]',
+        mail_submit: '//input[@type="submit"]',
+
     }
 
     goContactHome() {
@@ -45,8 +53,21 @@ export class Homepage extends BaseAction {
         this.get(this.elements.UPLOADS,fileName)
     }
 
-    msgReport(textValue) {
+    errorMsg(textValue) {
         this.click(this.elements.SignIn_Btn);
         this.shouldContainText(this.elements.messages,textValue)
     }
+
+    mailInfo(fullName, mailId, subject, text) {
+        this.type(this.elements.mailName,fullName);
+        this.type(this.elements.mailId, mailId);
+        this.type(this.elements.subject, subject);
+        this.type(this.elements.msg, text)
+    }
+
+    mailInfoMsg() {
+        this.click(this.elements.mail_submit)
+    }
+
+
 }
